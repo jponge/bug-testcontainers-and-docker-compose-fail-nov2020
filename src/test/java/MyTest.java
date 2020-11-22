@@ -27,6 +27,7 @@ class MyTest {
 
     @BeforeAll
     void prepare() throws InterruptedException {
+        // Thread.sleep(1000); << Ensures PostgreSQL is reachable
         logger.info("🚀 MyTest.prepare()");
 
         Vertx vertx = Vertx.vertx();
